@@ -9,11 +9,20 @@ export const About = () => {
       <h2 className={styles.title}>About</h2>
       <div className={styles.content}>
         <img
-          src={getImageUrl("about/aboutImage.png")}
+          src={getImageUrl("about/avatar_new.webp")}
           alt="Me sitting with a laptop"
           className={styles.aboutImage}
         />
         <ul className={styles.aboutItems}>
+        <li className={styles.aboutItem}>
+            <img src={getImageUrl("about/uiIcon.png")} alt="UI icon" />
+            <div className={styles.aboutItemText}>
+              <h3>Flutter Developer</h3>
+              <p>
+              As a passionate Flutter developer, I specialize in creating highly performant and visually engaging cross-platform mobile applications. 
+              </p>
+            </div>
+          </li>
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" />
             <div className={styles.aboutItemText}>
@@ -34,16 +43,7 @@ export const About = () => {
               </p>
             </div>
           </li>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
-            <div className={styles.aboutItemText}>
-              <h3>UI Designer</h3>
-              <p>
-                I have designed multiple landing pages and have created design
-                systems as well
-              </p>
-            </div>
-          </li>
+         
         </ul>
       </div>
     </section>
