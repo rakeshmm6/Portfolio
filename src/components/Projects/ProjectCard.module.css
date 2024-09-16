@@ -4,20 +4,24 @@
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  justify-content: space-between;
   background: linear-gradient(180deg, #a5afe0 0%, #3a3d42 100%);
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 18px 24px;
   max-width: 345px;
+  width: 345px;  /* Fixed width */
+  height: 850px;
 }
 
 .image {
   margin-bottom: 26px;
+  height: 250px;
 }
 
 .title {
   font-size: 25px;
   font-weight: 700;
-  color: aliceblue;
+  color: rgb(24, 40, 220);
 }
 
 .description {
@@ -61,4 +65,6 @@
   border-radius: 100px;
   background: var(--color-primary);
   padding: 1px 22px;
+  margin-top: auto;
+  margin-bottom: auto;
 }

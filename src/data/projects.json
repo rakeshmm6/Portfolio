@@ -1,26 +1,27 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "id":"project1",
+    "title": "React Native Laundry App",
+    "imageSrc": "projects/laundry_3.png",
+    "description": "Built using React Native for cross-platform functionality, with Firebase for authentication and database services. Integrated Redux for state management and React Navigation for structured app navigation.",
+    "skills": ["React-Native", "Firebase", "Redux"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/rakeshmm6/react_native_laundry"
   },
   {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
+    "title": "Job Search App",
+    "imageSrc": "projects/jobs_1.png",
+    "description": "Developed with React Native and Axios for API-based job search functionality. Utilizes Expo for development and testing, along with custom hooks and pagination for efficient data handling.",
+    "skills": ["React-Native", "Axios", "Hooks"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/rakeshmm6/Job_search_reactNative"
   },
   {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Fitness Tracking App ",
+    "imageSrc": "projects/fitness_1.png",
+    "description": "Developed with React Native, featuring custom components for workout and progress tracking. Utilizes Context API for state management and Stack Navigator for seamless screen transitions.",
+    "skills": ["React-Native", "Context-Api", "Stack Navigator"],
+    "demo": "",
+    "source": "https://github.com/rakeshmm6/react_native_fitness_app"
   }
 ]

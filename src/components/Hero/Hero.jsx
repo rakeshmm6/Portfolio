@@ -1,17 +1,36 @@
 import React from "react";
-
+import resumepdf from '../../../public/resume.pdf'
 import styles from "./Hero.module.css";
 import { getImageUrl } from "../../utils";
 
 export const Hero = () => {
+  const handleDownload = ()=>{
+    //const pdfUrl=getImageUrl("./resume.pdf");
+    const link=document.createElement("a");
+    link.href=resumepdf;
+    link.download="resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I'm Rakesh</h1>
-        <p className={styles.description}>
-        I am a skilled Flutter, React Native, React.js, and Next.js developer with a strong command of these technologies. If you'd like to know more about my work or collaborate, feel free to reach out!
-        </p>
         
+        <h1 className={styles.description}>Hello,I'm </h1>
+       
+        <p className={styles.title}>Rakesh Mangasulkar</p>
+        <p className={styles.subtitle}>React-Native Developer</p>
+        <div className={styles.btn_container}>
+          <button
+            className={styles.btn} onClick={handleDownload}
+          >
+            Download CV
+          </button>
+          <button className={styles.btn} onClick={()=>{location.href}}>
+            Contact Info
+          </button>
+        </div>
       </div>
       <img
         src={getImageUrl("hero/heroSelf.JPG")}
