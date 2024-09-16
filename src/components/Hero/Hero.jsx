@@ -3,7 +3,7 @@ import resumepdf from '../../../public/resume.pdf'
 import styles from "./Hero.module.css";
 import { getImageUrl } from "../../utils";
 
-export const Hero = () => {
+export const Hero = ({contactRef}) => {
   const handleDownload = ()=>{
     //const pdfUrl=getImageUrl("./resume.pdf");
     const link=document.createElement("a");
@@ -13,6 +13,14 @@ export const Hero = () => {
     link.click();
     document.body.removeChild(link);
   }
+ 
+  const scrollToContact = () => {
+    if (contactRef.current) {
+      contactRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+
   return (
     <section className={styles.container}>
       <div className={styles.content}>
@@ -27,8 +35,7 @@ export const Hero = () => {
           >
             Download CV
           </button>
-          <button className={styles.btn} onClick={()=>{location.href}}>
-            Contact Info
+          <button className={styles.btn} onClick={scrollToContact}>Contact Info
           </button>
         </div>
       </div>

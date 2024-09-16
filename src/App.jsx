@@ -1,4 +1,5 @@
 
+import { useRef } from "react";
 import styles from "./App.module.css";
 import { About } from "./components/About/About";
 import { Contact } from "./components/Contact/Contact";
@@ -9,15 +10,16 @@ import { Projects } from "./components/Projects/Projects";
 
 
 function App() {
+  const contactRef= useRef(null);
   return (
    
     <div className={styles.App}>
     <Navbar />
-    <Hero />
+    <Hero contactRef={contactRef}/>
     <About />
     <Experience />
     <Projects />
-    <Contact />  
+    <Contact ref={contactRef}/>  
           
        
          

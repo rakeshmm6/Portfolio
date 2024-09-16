@@ -76,7 +76,12 @@
   border: rgb(53, 53, 53) 0.1rem solid;
   width: 200px;
   height: 50px;
-  ;
+  
+
+}
+.btn a{
+ text-decoration: none;
+ 
 }
 .btn:hover{
   cursor: pointer;

@@ -1,11 +1,11 @@
-import React from "react";
+import React,{forwardRef} from "react";
 
 import styles from "./Contact.module.css";
 import { getImageUrl } from "../../utils";
 
-export const Contact = () => {
+export const Contact = forwardRef((props,ref) => {
   return (
-    <footer id="contact" className={styles.container}>
+    <footer id="contact" className={styles.container} ref={ref}>
       <div className={styles.text}>
         <h2>Contact</h2>
         <p>Feel free to reach out!</p>
@@ -29,4 +29,4 @@ export const Contact = () => {
       </ul>
     </footer>
   );
-};
+});
